@@ -35,6 +35,12 @@ body {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width:395px) {
+  .todo-form{
+    flex-direction: column;
+  }
+}
+
 .todo-input {
   flex: 1;
   padding: 10px;
@@ -43,6 +49,12 @@ body {
   font-size: 1rem;
   margin-right: 10px;
   transition: border-color 0.3s ease;
+}
+
+@media screen and (max-width:395px) {
+  .todo-input{
+    margin-bottom: 5px;
+  }
 }
 
 .todo-input:focus {
@@ -60,6 +72,15 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
+@media screen and (max-width:395px) {
+  .todo-add-btn{
+    margin-top: 5px;
+    margin: auto;
+  }
+}
+
+
 
 .todo-add-btn:hover {
   background-color: #45a049;
